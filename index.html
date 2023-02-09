@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="es">
+
+    <head>  <!--- declaramos la cabecera y los enlaces de CSS y JavaScript -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="index.js" type="text/javascript"></script>
+    </head>
+
+    <body>   
+        <div class="container"><!--- declaramos el cuerpo, formulario y su titulo -->
+            <form id="formulario">  
+                <div class="titulo">Create Account</div>
+
+
+                <!--- declaramos el campo de nombre de usuario como tipo texto, le asignamos el ID y lo volvemos obligatorio. Además, creamos una etiqueta span para mostrar el mensaje de error en caso de que exista-->
+                <div>
+                    <label for="nombreDeUsuario">Nombre</label>
+                    <input type="text" name="namenombreusuario" id="nombre-de-Usuario" pattern="[A-Za-z]{1,15}" required> 
+                    <span id="Name_error" ></span>
+                </div>
+
+
+                <!--- declaramos el campo de Email como tipo email, le asignamos el ID y lo volvemos obligatorio. Además, creamos una etiqueta span para mostrar el mensaje de error en caso de que exista-->
+                <div>
+                    <label for="correoElectronico">Email</label>
+                    <input type="email" name="email" id="correo-electronico" required>
+                    <span id="email_error"></span>
+                </div>
+
+
+                <!--- declaramos el campo clave como tipo password, le asignamos el ID y lo volvemos obligatorio. Además, creamos una etiqueta span para mostrar el mensaje de error en caso de que exista-->
+                <div>
+                    <label for="password">Clave</label>
+                    <input type="password" name="password" id="contrasena" required>
+                    <span id="contrasena_error"></span>
+                </div>
+
+
+                <!--- declaramos el campo confirmación de clave como tipo password, le asignamos el ID y lo volvemos obligatorio. Además, creamos una etiqueta span para mostrar el mensaje de error en caso de que exista-->
+                <div>
+                    <label for="password"> Confirme su clave</label>
+                    <input type="password" name="ppassword" id="ccontrasena" required>
+                    <span id="confirmacion_error"></span>
+                </div>
+
+
+            <!--- declaramos el botón para enviar -->
+                <button id="button" type="button" onclick="cambiarcolor();"> ENVIAR</button>
+
+            </form>
+        </div>
+    </body>
+</html>

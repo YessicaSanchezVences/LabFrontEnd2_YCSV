@@ -1,0 +1,126 @@
+
+/* Estilo que se aplica a toda la hoja */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #202528;
+    color: #aba5e3;
+    padding: 5px 5px 0px 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+
+/* Estilo que se aplica al formato del formulario */
+#formulario {
+    color: #fff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: 2px 2px 4px #928f8f;
+    background-color: #343b41;
+    padding: 50px;
+    border-radius: 4px;
+    }
+
+
+/* Estilos para el titulo "Create Account" */
+  .titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #343b41;
+  }
+
+ /* Estilo inicial para los campos a llenar por el usuario */
+  input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #343b41;
+    padding-right: 30px;
+    box-shadow: 2px 2px 4px #343b41;
+    background-color: #fff;
+    background-image: none;
+    background-position: right;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-x: 260px;
+  }
+
+/* Estilos asignado a una clase que dependerá de lo que ingrese el usuario en los campos. Los inputs cambiarán su clase en javascript dinámicamente con las validaciones if */
+  .ok{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #58bd00;
+    padding-right: 30px;
+    box-shadow: 2px 2px 4px #58bd00;
+    background-color: #fff;
+    background-image: url("https://raw.githubusercontent.com/YessicaSanchezVences/LabFrontEnd2_YCSV/main/images/success-icon.svg");
+    background-position: right;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-x: 260px;
+  }
+  
+  span {
+    background-color: transparent;
+    color: transparent;
+  }
+  
+  .nook{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #f10909;
+    padding-right: 40px;
+    box-shadow: 2px 2px 4px #f10909;
+    background-color: #fff;
+    background-image: url("https://raw.githubusercontent.com/YessicaSanchezVences/LabFrontEnd2_YCSV/main/images/error-icon.svg");
+    background-position: right;
+    background-size: 15px;
+    background-position-x: 260px;
+  }
+
+  /* Estilo para las etiquetas "label" (nombre, email, clave, confirme su clave) */
+label {
+    background-color: #343b41;
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+
+   /* Estilo que se aplica a las etiquetas div del formulario */
+#formulario div {
+    position: relative;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+  
+
+/* Estilo del botón enviar */
+button {
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    background-color: #5144c5;
+    border: 1px solid #0b0605;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  
+  }
+
+  button:hover {
+    opacity: 0.8;
+    box-shadow: 2px 2px 4px rgba(254, 253, 253, 0.989);
+  }
+
